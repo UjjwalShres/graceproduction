@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.header-img {
+    background: url(IMAGE/prem\ -15\ copy.jpg);
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    flex: 1 1 0;
+    height: 720px;
+}
+
+.header-side {
+    background-color: #ffe1fa;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header-side >img {
+    width: 500px;
+    align-self: center;
+}
+
+.header-h1{
+    flex: 1 5 0;
+    margin: 60px 20px;
+    align-self: center;
+}
+
+.header-a  {
+    flex: 1 1 0;
+    align-self: center;
+}
+
+.header-h1 > h1 {
+    color: #2f3041;
+    font-size: 80px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.header-a > a{
+    color: #2f3041;
+    text-decoration: none;
+    font-size: 30px;
+    border-bottom: solid #2f3041 2px;
+    padding: 25px 50px;   
+}
+
+.header-a>a:hover {
+    transition: 0.5s ease-in-out;
+    padding: 25px 100px;
+    font-size: 35px;
+}
+
+
+
+.about {
+    background-color: #BD6AAB;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-h1 >h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.about-h1 {
+    flex: 1 1 0;
+    padding-top: 200px;
+    margin-bottom: -300px;
+}
+
+.about-p {
+    flex: 1 1 0;
+    padding: 0 20%;
+    text-align: center;
+}
+
+.about-p > p{
+    color: #2f3041;
+    font-size: 30px;
+}
+
+
+
+.classic {
+    background-color: #ffe1fa;
+    height: 720px;
+}
+
+.classic-heading > h1 {
+    margin: 0;
+    padding: 60px 80px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+.card {
+    background-color: white;
+    width: 30%;
+    flex: 1 1 400px;
+
+}
+
+.card > img {
+    object-fit: cover;
+    width: 100%; 
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-details {
+    padding: 20px 40px;   
+}
+
+.card-details > h3 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.card-details > h4 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer-details {
+    display: flex;
+    padding-top: 100px;
+}
+
+.footer-details >h1 {
+    color: #2f3041;
+    font-size: 80px;
+    font-weight: 450;
+    padding: 0 40px;
+    width: 50%;
+}
+
+.footer-details > h1 > span {
+    color: white;
+}
+
+.info{
+    list-style-type: none;
+    padding-top: 140px;
+}
+
+.info > li{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.info > li:hover {
+    color: yellow;
+}
+
+#footer-link {
+    padding-top: 140px;
+    align-self: center;
+}
+
+#footer-link > a{
+    color: white;
+    border-bottom: white solid 2px;
+}
+
+.footer {
+    background-color: #BD6AAB;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    background-color: #2f3041;
+    height: 60px;
+}
+
+.copyright >h3{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        display: block;
+        
+    }
+
+    .header-img{
+        width: 100%;
+    }
+
+    .header-side > img {
+        align-self: center;
+    }
+
+
+    .header-side{
+        width: 100%;
+        height: 700px;
+    }
+
+    .header-h1 >h1 {
+        margin: 30px 10px;
+        font-size: 60px;
+    }
+
+    .header-a > a {
+        margin-left: auto;
+        font-size: 20px;
+    }
+
+    .header-a {
+        align-self: center;
+    }
+
+
+    .about {
+        height: 800px;
+        margin-top: 600px;
+    }
+
+    .about-h1 {
+        padding-top: 100px;
+        margin-bottom: 0;
+    }
+
+    .classic {
+        height: 1800px;
+    }
+
+    .footer-details{
+        display: block;
+        max-height: 1000px;
+    }
+
+    .footer {
+        height: 1200px;
+    }
+
+    #footer-link>a {
+        font-size: 25px;
+        padding: 20px 30px;
+    }
+
+}
